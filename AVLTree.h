@@ -22,7 +22,6 @@ public:
 	{
 		return m_root.height;
 	}
-	//º¯Êıºó¼Óconst±íÃ÷´Ëº¯Êı²»ĞŞ¸ÄÀàµÄ³ÉÔ±±äÁ¿,·½±ãÔÄ¶Á
 	const Comparable& findMin() const 
 	{
 		return findMin(m_root)->element;
@@ -74,7 +73,7 @@ public:
 		remove(x, m_root);
 
 	}
-	//Éî¿½±´
+	//æ·±æ‹·è´
 	const AVLTree& operator=(const AVLTree& rhs)
 	{
 		if (this != &rhs) {
@@ -185,9 +184,6 @@ AVLTree<Comparable>::findMin(
 	return findMin(t->left);
 }
 
-/**
-* ²éÕÒ×î´óµÄÔªËØ, Í¨¹ıÑ­»·µÄ·½·¨
-*/
 template<typename Comparable>
 typename AVLTree<Comparable>::AVLNode*
 AVLTree<Comparable>::findMax(
